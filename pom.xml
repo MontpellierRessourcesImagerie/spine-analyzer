@@ -4,6 +4,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
 		http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
 
 	<parent>
 		<groupId>org.scijava</groupId>
@@ -57,14 +58,14 @@
 	</mailingLists>
 
 	<scm>
-		<connection>scm:git:https://github.com/imagej/example-legacy-plugin</connection>
-		<developerConnection>scm:git:git@github.com:imagej/example-legacy-plugin</developerConnection>
+		<connection>scm:git:https://github.com/MontpellierRessourcesImagerie/spine-analyzer</connection>
+		<developerConnection>scm:git:git@github.com:MontpellierRessourcesImagerie/spine-analyzer</developerConnection>
 		<tag>HEAD</tag>
-		<url>https://github.com/imagej/example-legacy-plugin</url>
+		<url>https://github.com/MontpellierRessourcesImagerie/spine-analyzer</url>
 	</scm>
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/imagej/example-legacy-plugin/issues</url>
+		<url>https://github.com/MontpellierRessourcesImagerie/spine-analyzer/issues</url>
 	</issueManagement>
 	<ciManagement>
 		<system>None</system>
