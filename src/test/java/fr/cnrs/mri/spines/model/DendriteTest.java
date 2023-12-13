@@ -1,15 +1,15 @@
 package fr.cnrs.mri.spines.model;
 
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
-
-import ij.ImagePlus;
 import ij.gui.PolygonRoi;
 import ij.gui.Roi;
 
+
+
 class DendriteTest {
 
+	
 	@Test
 	void constructorTest() {
 		Dendrite dendrite = new Dendrite();
@@ -68,5 +68,28 @@ class DendriteTest {
 		dendrite.addSpine(spine3);
 		assertEquals(3, dendrite.getSpines().size());
 	}
-
+	
+	
+	@Test
+	void testToString() {
+		Dendrite dendrite = new Dendrite();
+		String string = dendrite.toString();
+		assertTrue(string.contains("0"));
+		Spine spine1 = new Spine();
+		dendrite.addSpine(spine1);
+		string = dendrite.toString();
+		assertTrue(string.contains("1"));
+		Spine spine2 = new Spine();
+		dendrite.addSpine(spine2);
+		string = dendrite.toString();
+		assertTrue(string.contains("2"));
+	}
+	
+	
+	@Test
+	void testGetEssence() {
+		Dendrite dendrite1 = new Dendrite();
+		Dendrite dendrite2 = new Dendrite();
+		assertNotEquals(dendrite1.getEssence(), dendrite2.getEssence());
+	}
 }
